@@ -32,15 +32,17 @@ binary-arch:	checkroot build
 	mkdir -p debian/tmp/usr/bin
 	mkdir -p debian/tmp/usr/include
 	cp lib/*.h debian/tmp/usr/include
-	mkdir -p debian/tmp/usr/doc/giflib/html
-	cp doc/*.txt debian/tmp/usr/doc/giflib
-	cp doc/*.html debian/tmp/usr/doc/giflib/html
+	mkdir -p debian/tmp/usr/doc/giflib3g/html
+	cp doc/*.txt debian/tmp/usr/doc/giflib3g
+	cp doc/*.html debian/tmp/usr/doc/giflib3g/html
 	make install DESTDIR=`pwd`/debian/tmp/
 	ln -s libgif.so.3 debian/tmp/usr/lib/libgif.so
+	(cd debian/tmp/usr/doc; ln -s giflib3g giflib3g-dev)
+	(cd debian/tmp/usr/doc; ln -s giflib3g giflib-bin)
 # Must have debmake installed for this to work. Otherwise please copy
 # /usr/bin/debstd into the debian directory and change debstd to debian/debstd
 	debstd NEWS READ.ME
-	dpkg-gencontrol -pgiflib3-dev
+	dpkg-gencontrol -pgiflib3g
 	chown -R root.root debian/tmp
 	chmod -R go=rX debian/tmp
 	dpkg --build debian/tmp ..

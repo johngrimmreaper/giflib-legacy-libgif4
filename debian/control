@@ -1,14 +1,21 @@
 Source: giflib
 Section: non-free/graphics
 Priority: extra
-Maintainer: Andreas Jellinghaus <aj@dungeon.inka.de>
-Standards-Version: 2.3.0.0
+Maintainer: Larry Daffner <vizzie@airmail.net>
+Standards-Version: 2.4.0.0
 
-Package: giflib3-dev
+Package: giflib3g
+Architecture: any
+Conflicts: libgif3g, libgif2
+Depends: libc6
+Description: shared library for GIF images (runtime lib)
+ This is a shared library for working with GIF images. 
+
+Package: giflib3g-dev
 Architecture: any
 Conflicts: giflib-dev, giflib3g-dev, libgif-dev, libgif3g-dev, libgif2-dev
 Provides: giflib-dev
-Depends: libc5-dev, giflib3 (= ${Source-Version})
+Depends: libc6-dev, giflib3g (= ${Source-Version})
 Description: shared library for GIF images (development files)
  This package contains header files needed to compile programs that use
  giflib.                
@@ -16,14 +23,6 @@ Description: shared library for GIF images (development files)
 Package: giflib-bin
 Architecture: any
 Conflicts: libgif3-bin
-Depends: giflib3 (= ${Source-Version}), ${shlibs:Depends}
+Depends: giflib3g (= ${Source-Version}), ${shlibs:Depends}
 Description: programs to convert GIF images
  These are some programs that use giflib to convert images.
-
-Package: giflib3
-Architecture: any
-Conflicts: libgif3g, libgif2
-Depends: libc5
-Description: shared library for GIF images (runtime lib)
- This is a shared library for working with GIF images. 
-

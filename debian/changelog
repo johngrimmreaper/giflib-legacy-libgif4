@@ -1,15 +1,9 @@
-giflib (3.0-4.3) experimental; urgency=low
+giflib (3.0-5) unstable frozen; urgency=low
 
-  * real libc5/experimental release (i forgot to change the library names).
-  * new compile (something went wrong in the first -4.3 build).
+  * Fixed copyright location(s)
+  * new maintainer address
 
- -- Andreas Jellinghaus <aj@dungeon.inka.de>  Tue, 21 Oct 1997 15:44:02 -0400
-
-giflib (3.0-4.2) experimental; urgency=low
-
-  * libc5/experimental release.
-
- -- Andreas Jellinghaus <aj@dungeon.inka.de>  Mon, 20 Oct 1997 08:41:27 -0400
+ -- Larry Daffner <vizzie@airmail.net>  Tue, 24 Mar 1998 11:31:47 -0600
 
 giflib (3.0-4.1) unstable; urgency=low
 
