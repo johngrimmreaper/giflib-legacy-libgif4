@@ -1,52 +1,32 @@
 Source: giflib
-Section: non-free/graphics
+Section: libs
 Priority: extra
-Maintainer: Larry Daffner <vizzie@airmail.net>
-Standards-Version: 2.4.0.0
+Maintainer: Pawel Wiecek <coven@debian.org>
+Build-Depends: debhelper, libx11-dev
+Standards-Version: 3.6.1
 
 Package: giflib3g
+Section: libs
 Architecture: any
 Conflicts: libgif3g, libgif2, libungif3g
 Replaces: libungif3g
 Depends: ${shlibs:Depends}
 Description: shared library for GIF images (runtime lib)
  This is a shared library for working with GIF images.
- .
- The Graphics Interchange Format(c) specification is the copyrighted
- property of CompuServe Incorporated.  Unfortunately, it used LZW
- compression for compressed GIFs, which is covered by a patent held
- by Unisys.  As this package existed before UniSys's lawyeritis attack
- of New Years' Day 1995, it is grandfathered in under their license
- terms and you do not have to pay fees for using it.
- .
- Alternatively, you may choose to install the libungif package which
- is available in the main Debian distribution.  The libungif package
- is a variant of giflib with the offending patented LZW compression
- code snipped out, so it can only save uncompressed GIFs.
 
 Package: giflib3g-dev
+Section: libdevel
 Architecture: any
-Conflicts: giflib-dev, libungif3g-dev, libgif-dev, libgif3g-dev, libgif2-dev
+Conflicts: giflib-dev, libungif3g-dev, libgif-dev, libgif3g-dev, libgif2-dev, heimdal-dev
 Replaces: libungif3g-dev, giflib3g
 Provides: giflib-dev
 Depends: libc6-dev, giflib3g (= ${Source-Version})
 Description: shared library for GIF images (development files)
  This package contains header files needed to compile programs that use
  giflib.                
- .
- The Graphics Interchange Format(c) specification is the copyrighted
- property of CompuServe Incorporated.  Unfortunately, it used LZW
- compression for compressed GIFs, which is covered by a patent held
- by Unisys.  As this package existed before UniSys's lawyeritis attack
- of New Years' Day 1995, it is grandfathered in under their license
- terms and you do not have to pay fees for using it.
- .
- Alternatively, you may choose to install the libungif package which
- is available in the main Debian distribution.  The libungif package
- is a variant of giflib with the offending patented LZW compression
- code snipped out, so it can only save uncompressed GIFs.
 
 Package: giflib-bin
+Section: utils
 Architecture: any
 Conflicts: libgif3-bin, giflib-bin, libungif-bin
 Replaces: libungif-bin, giflib3g
@@ -54,15 +34,3 @@ Provides: libungif-bin
 Depends: giflib3g (= ${Source-Version}), ${shlibs:Depends}
 Description: programs to convert GIF images
  These are some programs that use giflib to convert images.
- .
- The Graphics Interchange Format(c) specification is the copyrighted
- property of CompuServe Incorporated.  Unfortunately, it used LZW
- compression for compressed GIFs, which is covered by a patent held
- by Unisys.  As this package existed before UniSys's lawyeritis attack
- of New Years' Day 1995, it is grandfathered in under their license
- terms and you do not have to pay fees for using it.
- .
- Alternatively, you may choose to install the libungif package which
- is available in the main Debian distribution.  The libungif package
- is a variant of giflib with the offending patented LZW compression
- code snipped out, so it can only save uncompressed GIFs.

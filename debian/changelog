@@ -1,3 +1,47 @@
+giflib (3.0-11) unstable; urgency=low
+
+  * Updated copyright file by removing warning saying it cannot by put on CDs,
+    removed patent-related notes from long descriptions in control as well
+    (should have done that in -10, but forgot).
+
+ -- Pawel Wiecek <coven@debian.org>  Thu, 19 Aug 2004 00:43:34 +0200
+
+giflib (3.0-10) unstable; urgency=low
+
+  * Moved to main because of LZW's patent expiration (at long last!)
+    (closes: #258465)
+  * Fixed build-dependencies (closes: #262405)
+
+ -- Pawel Wiecek <coven@debian.org>  Tue, 17 Aug 2004 22:09:18 +0200
+
+giflib (3.0-9) unstable; urgency=low
+
+  * Renamed getarg.h to gagetarg.h, to avoid name clashes (closes: #83331)
+  * Updated standards version (no changes)
+
+ -- Pawel Wiecek <coven@debian.org>  Mon, 19 Jan 2004 22:47:34 +0100
+
+giflib (3.0-8) unstable; urgency=low
+
+  * Applied patch from John Lightsey <john@nixnuts.net> to fix transparency
+    problems (closes: #20716)
+  * Documented the fact, that giflib cannot be put on CD-ROMs (closes: #24580)
+  * Applied patch from John Lightsey <john@nixnuts.net> to fix gifinto's
+    behavior when no arguments are supplied (closes: #49431)
+  * giflib3g-dev now conflicts with heimdal-dev (closes: #83331, #180265)
+  * Updated standards version
+  * Updated sections (giflib3g-dev goes to non-free/libdevel, giflib3g-bin
+    goes to non-free/utils)
+
+ -- Pawel Wiecek <coven@debian.org>  Wed, 18 Jun 2003 13:54:09 +0200
+
+giflib (3.0-7) unstable; urgency=low
+
+  * New maintainer (closes: #139387)
+  * Upgraded to current standards version (closes: #133331)
+
+ -- Pawel Wiecek <coven@debian.org>  Tue,  9 Apr 2002 14:22:35 +0200
+
 giflib (3.0-6) unstable; urgency=low
 
   * Move docs and man pages to /usr/share (Closes: #91165, #91479, #91480,
@@ -58,6 +102,3 @@ giflib (3.0-1) unstable; urgency=low
 
  -- Andreas Jellinghaus <aj@dungeon.inka.de>  Thu, 18 Sep 1997 11:31:18 +0200
 
-Local variables:
-mode: debian-changelog
-End:
