@@ -33,9 +33,9 @@ install-debstamp:
 	mkdir -p debian/tmp/usr/bin
 	mkdir -p debian/tmp/usr/include
 	cp lib/*.h debian/tmp/usr/include
-	mkdir -p debian/tmp/usr/doc/giflib3g/html
-	cp doc/*.txt debian/tmp/usr/doc/giflib3g
-	cp doc/*.html debian/tmp/usr/doc/giflib3g/html
+	mkdir -p debian/tmp/usr/share/doc/giflib3g/html
+	cp doc/*.txt debian/tmp/usr/share/doc/giflib3g
+	cp doc/*.html debian/tmp/usr/share/doc/giflib3g/html
 	make install DESTDIR=`pwd`/debian/tmp/
 	cd $(i)/usr/lib; \
 		ln -sf libgif.so.3.0 libgif.so ; \
@@ -89,8 +89,8 @@ giflib3g: install
 
 giflib3g-dev: install
 	@echo "--- Building: $@"
-	mkdir -p $(b)/$@/usr/doc
-	cd $(b)/$@/usr/doc; ln -s giflib3g $@
+	mkdir -p $(b)/$@/usr/share/doc
+	cd $(b)/$@/usr/share/doc; ln -s giflib3g $@
 	dh_movefiles         -p$@ -P$(b)/$@
 	dh_strip             -p$@ -P$(b)/$@ 
 	dh_compress          -p$@ -P$(b)/$@ 
@@ -107,8 +107,8 @@ giflib3g-dev: install
 
 giflib-bin: install
 	@echo "--- Building: $@"
-	mkdir -p $(b)/$@/usr/doc
-	cd $(b)/$@/usr/doc; ln -s giflib3g $@
+	mkdir -p $(b)/$@/usr/share/doc
+	cd $(b)/$@/usr/share/doc; ln -s giflib3g $@
 	dh_movefiles         -p$@ -P$(b)/$@
 	dh_strip             -p$@ -P$(b)/$@ 
 	dh_compress          -p$@ -P$(b)/$@ 

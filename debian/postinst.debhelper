@@ -1,0 +1,7 @@
+# Automatically added by dh_installdocs
+if [ "$1" = "configure" ]; then
+	if [ -d /usr/doc -a ! -e /usr/doc/giflib3g -a -d /usr/share/doc/giflib3g ]; then
+		ln -sf ../share/doc/giflib3g /usr/doc/giflib3g
+	fi
+fi
+# End automatically added section

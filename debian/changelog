@@ -1,3 +1,10 @@
+giflib (3.0-6) unstable; urgency=low
+
+  * Move docs and man pages to /usr/share (Closes: #91165, #91479, #91480,
+    #91482)
+
+ -- Larry Daffner <vizzie@airmail.net>  Tue, 27 Mar 2001 21:33:02 -0600
+
 giflib (3.0-5.2) unstable; urgency=low
 
   * Redid debian/rules to use debhelper.
@@ -53,5 +60,4 @@ giflib (3.0-1) unstable; urgency=low
 
 Local variables:
 mode: debian-changelog
-add-log-mailing-address: "aj@dungeon.inka.de"
 End:
