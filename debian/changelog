@@ -1,0 +1,47 @@
+giflib (3.0-4.3) experimental; urgency=low
+
+  * real libc5/experimental release (i forgot to change the library names).
+  * new compile (something went wrong in the first -4.3 build).
+
+ -- Andreas Jellinghaus <aj@dungeon.inka.de>  Tue, 21 Oct 1997 15:44:02 -0400
+
+giflib (3.0-4.2) experimental; urgency=low
+
+  * libc5/experimental release.
+
+ -- Andreas Jellinghaus <aj@dungeon.inka.de>  Mon, 20 Oct 1997 08:41:27 -0400
+
+giflib (3.0-4.1) unstable; urgency=low
+
+  * libc6 release for hamm.
+
+ -- Andreas Jellinghaus <aj@dungeon.inka.de>  Sat, 18 Oct 1997 12:25:32 +0200
+
+giflib (3.0-4) unstable; urgency=low
+
+  * renamed binaries to giflib* to bring them in sync with source name.
+
+ -- Andreas Jellinghaus <aj@dungeon.inka.de>  Mon, 29 Sep 1997 18:11:22 +0200
+
+giflib (3.0-3) unstable; urgency=low
+
+  * fixed shared library. now link all bins with shared library.
+
+ -- Andreas Jellinghaus <aj@dungeon.inka.de>  Wed, 24 Sep 1997 19:14:48 +0200
+
+giflib (3.0-2) unstable; urgency=low
+
+  * added -D_REENTRANT and -lc to cflags/ldflags for glibc2.
+
+ -- Andreas Jellinghaus <aj@dungeon.inka.de>  Thu, 18 Sep 1997 14:26:06 +0200
+
+giflib (3.0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Andreas Jellinghaus <aj@dungeon.inka.de>  Thu, 18 Sep 1997 11:31:18 +0200
+
+Local variables:
+mode: debian-changelog
+add-log-mailing-address: "aj@dungeon.inka.de"
+End:
