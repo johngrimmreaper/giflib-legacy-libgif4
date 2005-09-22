@@ -3,7 +3,7 @@ Section: libs
 Priority: extra
 Maintainer: Pawel Wiecek <coven@debian.org>
 Build-Depends: debhelper, libx11-dev
-Standards-Version: 3.6.1
+Standards-Version: 3.6.2
 
 Package: giflib3g
 Section: libs

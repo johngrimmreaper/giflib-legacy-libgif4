@@ -1,3 +1,11 @@
+giflib (3.0-12) unstable; urgency=low
+
+  * Applied patch from Dann Frazier <dannf@hp.com> to fix problems on 64-bit
+    archs (closes: #325034)
+  * Updated standards-version (no changes required)
+
+ -- Pawel Wiecek <coven@debian.org>  Thu, 22 Sep 2005 21:15:00 +0200
+
 giflib (3.0-11) unstable; urgency=low
 
   * Updated copyright file by removing warning saying it cannot by put on CDs,
