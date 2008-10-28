@@ -15,12 +15,13 @@ clean: unpatch
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp
+	rm -f config.guess config.sub
 
 	[ ! -f Makefile ] || $(MAKE) distclean
 
 	dh_clean
 
-config.status: configure patch
+config.status: configure patch-stamp
 	dh_testdir
 
 ifneq "$(wildcard /usr/share/misc/config.sub)" ""
@@ -30,7 +31,7 @@ ifneq "$(wildcard /usr/share/misc/config.guess)" ""
 	cp -f /usr/share/misc/config.guess config.guess
 endif
 
-	CFLAGS="$(CFLAGS)" LDFLAGS="-Wl,-z,defs" ./configure $(CROSS) --prefix=/usr --mandir=\$${prefix}/share/man
+	CFLAGS="$(CFLAGS)" LDFLAGS="-Wl,-z,defs" ./configure $(CROSS) --prefix=/usr --mandir=\$${prefix}/share/man --disable-x11
 
 build: build-stamp
 build-stamp: config.status
