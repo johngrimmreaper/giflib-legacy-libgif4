@@ -1,18 +1,18 @@
 Source: giflib
 Section: libs
 Priority: optional
-Maintainer: Daniel Baumann <daniel@debian.org>
-Build-Depends: debhelper (>= 7), quilt, autotools-dev
-Standards-Version: 3.8.2
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>= 7), autotools-dev, quilt
+Standards-Version: 3.8.3
 Homepage: http://giflib.sourceforge.net/
-Vcs-Browser: http://git.debian.net/?p=debian/giflib.git
-Vcs-Git: git://git.debian.net/git/debian/giflib.git
 
 Package: giflib-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends}, giflib-tools (= ${binary:Version}), libgif4 (= ${binary:Version}), libgif-dev (= ${binary:Version})
+Depends:
+ ${misc:Depends}, giflib-tools (= ${binary:Version}),
+ libgif4 (= ${binary:Version}), libgif-dev (= ${binary:Version})
 Description: library for GIF images (debug)
  GIFLIB is a package of portable tools and library routines for working with GIF
  images.
