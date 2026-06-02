@@ -1,3 +1,9 @@
+giflib-legacy-libgif4 (4.1.6-11+ppa1~noble1) noble; urgency=medium
+
+  * Rebuild legacy libgif4 ABI package for Ubuntu 24.04 Noble.
+
+ -- Reaper <JohnGrimmReaper@disroot.org>  Tue, 02 Jun 2026 12:12:12 +0000
+
 giflib (4.1.6-11) unstable; urgency=low
 
   * Remove Provides: libungif4g.
