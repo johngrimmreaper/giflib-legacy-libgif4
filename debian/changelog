@@ -1,3 +1,9 @@
+giflib-legacy-libgif4 (4.1.6-11+ppa2~noble1) noble; urgency=medium
+
+  * Fix armhf build by including stdlib.h for malloc declaration.
+
+ -- Reaper <JohnGrimmReaper@disroot.org>  Sun, 14 Jun 2026 00:48:33 +0000
+
 giflib-legacy-libgif4 (4.1.6-11+ppa1~noble1) noble; urgency=medium
 
   * Rebuild legacy libgif4 ABI package for Ubuntu 24.04 Noble.

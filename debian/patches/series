@@ -2,3 +2,4 @@
 02-doc_fixes.patch
 03-spelling_fixes.patch
 04-fprintf_format_error.patch
+05-gif_hash-include-stdlib.patch

@@ -1,0 +1,12 @@
+Index: giflib-legacy-libgif4/lib/gif_hash.c
+===================================================================
+--- giflib-legacy-libgif4.orig/lib/gif_hash.c
++++ giflib-legacy-libgif4/lib/gif_hash.c
+@@ -48,6 +48,7 @@
+ #endif /* HAVE_FCNTL_H */
+ #include <stdio.h>
+ #include <string.h>
++#include <stdlib.h>
+ #include "gif_lib.h"
+ #include "gif_hash.h"
+ #include "gif_lib_private.h"
